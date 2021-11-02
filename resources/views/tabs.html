@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Steps</title>
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+
+<body>
+
+<section>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="steps">
+                    <progress id="progress" value=0 max=100 ></progress>
+                    <div class="step-item">
+                        <button class="step-button text-center" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1
+                        </button>
+                        <div class="step-title">
+                            Connect Google Account
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2
+                        </button>
+                        <div class="step-title">
+                            Store Settings
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3
+                        </button>
+                        <div class="step-title">
+                            Product Settings
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+<!--------------Step-1--------------------->
+
+<div class="card">
+ <div  id="headingOne"></div>
+
+  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+   <div class="card-body">
+     <div class="row step_1">
+     
+      <div class="col-md-4 left_text">
+       <h3>Google Merchant Center Account</h3>
+       <p>Shopify product that are synced to your Google Merchant Center product feed will be used by Google to create ads.</p>
+      
+      </div>
+      
+      <div class="col-md-8 right_drop p-0">
+       
+       <div class="col-md-12 right_main">
+       <h3>Connect a Google Merchant Center Account<span class="float-right"> <a href="https://support.google.com/merchants/answer/188924?hl=en" target="blank"> Create New</a></span></h3>
+       <div class="right_img"><img src="assets/img/icon.svg"></div>
+       <div class="right_dropdown"><select>
+       <option>Select a Merchant Account</option>
+       <option>Select a Merchant Account</option>
+       <option>Select a Merchant Account</option>
+       </select>
+      </div>
+      <div class="right_btn"><a href="#">Connect</a></div>
+     </div>
+    
+      <div class="border_div">
+       <p>Product data will be synced to this Merchant Center account</p>
+      </div>
+    </div>
+               
+     </div>     
+          <input type="button" value="Next" class="float-right btn_next">               
+     
+    </div>
+  </div>
+</div>
+
+ 
+<!--------------Step-1-Close--------------------->
+
+<!--------------Step-2--------------------->
+ 
+<div class="card">
+  <div  id="headingTwo"></div>
+  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+    <div class="card-body">
+       
+       <div class="col-md-12 primary_div">
+        <div class="row">
+          
+          <div class="col-md-5 left_text">
+           <h3>Primary Feed Settings</h3>
+           <p>Select the country language and currency where your products are sold and will ne shipped.If you're selling to multiple countries, 
+           please choose only the primary country in this step. You will be able to select other countries at a later stage from your Google
+            Merchant account</p>
+          </div>
+        
+        
+        
+          <div class="col-md-7 primary-right">
+          
+           <form>
+           <label>Target country, language and currency (based on your store's currencies)</label>
+           <select>
+           <option>United State (English, USD)</option>
+           <option>United State (English, USD)</option>
+           <option>United State (English, USD)</option>
+           </select>
+           </form>
+          </div>
+  
+        </div>
+       </div>
+       
+       <div class="col-md-12 primary_div mt-3">
+        <div class="row">
+          
+          <div class="col-md-5 left_text">
+           <h3>Shipping Settings</h3>
+           <p>Set up your shipping costs based on how you charge shipping.The costs that you submit to Merchant Center must match the costs 
+           that you charge on your website</p>
+          </div>
+        
+        
+        
+          <div class="col-md-7 primary_setting">
+          
+           <form>
+           <input type="radio">
+           <label class="form_label">Manually set up shipping in Google Merchant Center</label>
+           <p>You will go to Google Merchant Center and enter your product shipping information yourself. Your product won't sync until you di this</p>
+           </form>
+           
+           <form class="mt-4">
+           <input type="radio" checked>
+           <label class="form_label">Automatically import shipping setting  <span>(RECOMENDED)</span></label>
+           <p>Shopify will try to automatically import your shipping information from your store settings. You may need to provide 
+           additional information if we are unable to sync them automatically</p>
+           </form>
+           
+          </div>
+  
+        </div>
+       </div>   
+          
+       <div class="col-md-12 primary_div mt-3 mb-3">
+        <div class="row">
+          
+          <div class="col-md-5 left_text">
+           <h3>Tax Settings (US only)</h3>
+           <p>For US merchants only: So that users understand the exact price that they'll have to pay for a product, you must submit the taxes 
+           that you collect.</p>
+          </div>
+
+          <div class="col-md-7 primary_setting">
+          
+           <form>
+           <input type="radio" checked>
+           <label class="form_label">Do not charge tax in United States <span>(RECOMMENDED)</span></label>
+           </form>
+
+          </div>
+  
+        </div>
+       </div>  
+                        <input type="button" value="Next" class="float-right btn_next">               
+  
+    </div>
+  </div>
+</div>
+                
+<!--------------Step-2-Close--------------------->
+
+<!--------------Step-3--------------------->                
+                
+<div class="card">
+  <div  id="headingThree"></div>
+  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"data-parent="#accordionExample">
+   <div class="card-body">
+    
+       <div class="col-md-12 primary_div mt-3">
+       <div class="row">
+         <div class="col-md-3 left_text_2">
+           <h3>Product ID Format:</h3>
+         </div>
+
+         <div class="col-md-9 primary_setting_2">
+          <form>
+           <input type="radio" checked>
+           <label class="form_label">Global Format (Ex: Shopify_US_123456_987654) <span>(RECOMMENDED)</span></label>
+           <p>This is common ID format which is generally used for Shopify store.</p>
+           </form>
+           <form>
+           <input type="radio">
+           <label class="form_label">SKU as Product ID (Ex:ABCD1234)</label>
+           <p>All of your product must have an SKU, Otherwise they won't be imported</p>
+           </form>
+           <form>
+           <input type="radio">
+           <label class="form_label">Variant ID as Product ID (Ex: 123456789)</label>
+           <p>Choose this option if you would like to submit variant ID as unique product ID in the feed.</p>
+           </form>
+        </div>
+  
+        </div>
+       </div>
+
+       <div class="col-md-12 primary_div mt-3 mb-3">
+       
+       <div class="row">
+         <div class="col-md-3 left_text_2">
+           <h3>Which Products Needs to be Submitted in Feed</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <form class="mt-3">
+           <div class="l_1"><input type="radio" checked><label class="form_label">All Products <span>(RECOMMENDED)</span></label></div>
+            <div class="l_2"><input type="radio"><label class="form_label">Products From Collection</label></div>
+           </form>
+        </div>
+       </div>
+    
+        
+        <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Collection Type</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <form class="mt-1">
+           <div class="l_1"><input type="radio"><label class="form_label">Automated Collection</label></div>
+            <div class="l_2"><input type="radio"><label class="form_label">Manual Collection</label></div>
+           </form>
+        </div>
+       </div>
+       
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Select Collection</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <select>
+           <option>All</option>
+           <option>1</option>
+          </select>
+        </div>
+       </div>
+        
+        
+        <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Product Title</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <form class="mt-1">
+           <div class="l_1"><input type="radio" checked><label class="form_label">Default Product Title</label></div>
+            <div class="l_2"><input type="radio"><label class="form_label">SEO Title</label></div>
+           </form>
+        </div>
+       </div>
+       
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Product Description</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <form class="mt-1">
+           <div class="l_1"><input type="radio" checked><label class="form_label">Default Product Description</label></div>
+            <div class="l_2"><input type="radio"><label class="form_label">SEO Description</label></div>
+           </form>
+        </div>
+       </div>
+       
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Variant Submission</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <form class="mt-1">
+           <div class="l_1"><input type="radio"><label class="form_label">First Variant Only</label></div>
+            <div class="l_2"><input type="radio" checked><label class="form_label">All Variants</label></div>
+           </form>
+        </div>
+       </div>
+       
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Sale Price with Price</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <form class="mt-1">
+           <div class="l_1"><input type="radio"><label class="form_label">Enable Sale Price</label></div>
+           </form>
+        </div>
+       </div>
+       
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Product Image Option</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <form class="mt-1">
+           <div class="l_1"><input type="radio"><label class="form_label">Use second image for product having no variant</label></div>
+           </form>
+        </div>
+       </div>
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Submit Additional Images</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <form class="mt-1">
+           <div class="l_1"><input type="radio" checked><label class="form_label">
+           Check this if you would like to submit Additional images</label></div>
+           </form>
+        </div>
+       </div>
+        
+        
+        <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Default Google Product Category</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <select>
+           <option>Apparel & Accessories > Jewelry > Earrings</option>
+           <option>1</option>
+          </select>
+        </div>
+       </div>
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Default Age Group</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <select>
+           <option>Select Option from dropdown</option>
+           <option>Keep it Blank</option>
+           <option>Adult</option>
+           <option>Kids</option>
+           <option>Infant</option>
+           <option>NewBorn</option>
+           <option>Toddler</option>
+          </select>
+        </div>
+       </div>
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Default Gender</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <select>
+           <option>Select Option from dropdown</option>
+           <option>Keep it Blank</option>
+           <option>Female</option>
+           <option>Male</option>
+           <option>UniSex</option>
+          </select>
+        </div>
+       </div>
+       
+       
+       <div class="row mt-4">
+         <div class="col-md-3 left_text_2">
+           <h3>Default Product Condition</h3>
+         </div>
+         <div class="col-md-9 primary_setting_2">
+          <select>
+           <option>Select Option from dropdown</option>
+           <option>Keep it Blank</option>
+           <option>New</option>
+           <option>used</option>
+           <option>Refurbished</option>
+          </select>
+        </div>
+       </div>
+        
+ </div>
+<input type="button" value="Sync" class="float-right btn_next">    
+
+   </div> 
+  </div>
+</div>
+                
+<!--------------Step-3-Close--------------------->
+
+
+  </div>
+ </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+
+</body>
+</html>
